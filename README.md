@@ -15,3 +15,14 @@ main.exe
 ```
 
 Запускать нужно из папки недели (там лежат шейдеры и `glfw3.dll`). Esc — выход.
+
+## Результаты
+
+**week01** — окно с анимированным фоном  
+![week01](screenshots/week01.png)
+
+**week02** — цветной треугольник  
+![week02](screenshots/week02.png)
+
+**week03** — то же, шейдеры из файлов  
+![week03](screenshots/week03.png)
