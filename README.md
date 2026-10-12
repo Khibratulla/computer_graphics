@@ -1,9 +1,17 @@
-Неделя 1 до 3: окно, цветной треугольник, шейдеры из файлов.
+# Computer Graphics (OpenGL 3.3, GLFW, GLAD)
 
-Управление: Esc выход, пробел белый фон.
+| Папка | Задание |
+|---|---|
+| `week01` | Окно, цикл рендера, анимированный `glClearColor`, Space — белый фон, счётчик FPS |
+| `week02` | Цветной треугольник: VAO/VBO, шейдеры строками в коде |
+| `week03` | Шейдеры загружаются из файлов `vertex.glsl` / `fragment.glsl` |
 
-Сборка (MinGW, нужны GLFW и GLAD 2):
-gcc -c glad/src/gl.c -Iglad/include -o gl.o
-g++ main.cpp gl.o -Iglad/include -Iinclude -Llib-mingw-w64 -lglfw3 -lgdi32 -o main.exe
+## Сборка (MinGW-w64, Windows)
 
-Запускать из папки проекта (рядом vertex.glsl и fragment.glsl).
+```
+build.bat week03
+cd week03
+main.exe
+```
+
+Запускать нужно из папки недели (там лежат шейдеры и `glfw3.dll`). Esc — выход.

@@ -1,0 +1,3 @@
+*.o
+*.exe
+/week*/glfw3.dll

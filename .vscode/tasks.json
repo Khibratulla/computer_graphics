@@ -1,0 +1,11 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "build opengl",
+      "type": "shell",
+      "command": "gcc -c glad/src/gl.c -Iglad/include -o gl.o; g++ -g main.cpp gl.o -Iglad/include -Iinclude -Llib-mingw-w64 -lglfw3 -lgdi32 -o main.exe",
+      "group": { "kind": "build", "isDefault": true }
+    }
+  ]
+}
